@@ -2,7 +2,7 @@
 
 A static front-end page to display my portfolio with programming projects (subject to change to a React front-end app)
 
-This single page is to learn how to create a mobile responsive layout with max-width 700px, min-width 700px and max-width 500px with [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout), [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) and [Font Awesome](https://fontawesome.com/) from scratch without using any framework.
+This single page is to learn how to create a mobile responsive layout with max-width 700px, min-width 700px and max-width 500px with [CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables), [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout), [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) and [Font Awesome](https://fontawesome.com/) from scratch without using any framework.
 
 ![screen shot 2018-03-08 at 21 32 46 2](https://user-images.githubusercontent.com/32798242/37175331-7bde0c00-2319-11e8-9763-ed935a3c4afc.png)
 ![screen shot 2018-03-08 at 21 32 55 2](https://user-images.githubusercontent.com/32798242/37175348-8bc17440-2319-11e8-9f87-5a0fdb468b83.png)
@@ -28,6 +28,7 @@ Open index.html file in your browser.
 ## Related documentation
 For more information, see these links:
 
+* [CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables)
 * [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
 * [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
 * [Font Awesome](https://fontawesome.com/)
