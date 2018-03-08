@@ -1,0 +1,8 @@
+/* CSS variables */
+:root {
+  --primary: #499491;
+  --secondary: #FBD400;
+  --dark: #333;
+  --light: #A3DEC9;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
