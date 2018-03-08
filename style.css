@@ -122,7 +122,7 @@ img {
 
 /* top container */
 #top-container {
-  margin: 1em 0 1em;
+  margin: 1em 2em;
   display: grid;
   grid-gap: 20px;
   grid-template-areas:
@@ -145,12 +145,14 @@ img {
   justify-content: center;
   box-shadow: var(--shadow);
   color: var(--secondary);
+  text-align: left;
   opacity: 0.9;
 }
 
 .showcase h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 0;
+  padding: 0;
   color: var(--secondary);
 }
 
@@ -262,4 +264,71 @@ footer {
   background: var(--secondary);
   color: var(--light);
   text-align: center;
+}
+
+/* media queries */
+@media(min-width: 700px) {
+  /* body {display: none;} */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+
+  .grid2 {
+    display: grid;
+    grid-template-columns: 1fr repeat(1, minmax(auto, 25em)) 1fr;
+  }
+
+  #showcase .content-wrap {
+    grid-column: 2/3;
+    /* column-gap: 2em; */
+  }
+
+  #showcase .content-text p {
+    padding-top: 0;
+  }
+
+  #top-container, #portfolio .content-wrap, .image-wrap, #about .content-wrap, #contact .content-wrap {
+    grid-column: 2/4;
+  }
+
+  footer p {
+    grid-column: 2/3;
+  }
+
+}
+
+@media(max-width: 700px) {
+  .top-container {
+    grid-template-areas:
+      'showcase showcase'
+      'top-box-a top-box-b';
+  }
+
+  .showcase h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-nav ul {
+    grid-template-columns: 1fr;
+  }
+
+  #about, #contact {
+    grid-template-columns: 1fr;
+  }
+
+  #about .btn, #contact .btn {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media(max-width: 500px) {
+  .top-container {
+    grid-template-areas:
+      'showcase'
+      'top-box-a'
+      'top-box-b';
+  }
 }
