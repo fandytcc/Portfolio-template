@@ -121,6 +121,61 @@ img {
 }
 
 /* top container */
+#top-container {
+  margin: 1em 0 1em;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    'showcase showcase top-box-a'
+    'showcase showcase top-box-b';
+}
+
+/* showcase */
+.showcase {
+  grid-area: showcase;
+  min-height: 400px;
+  background: url(https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1464882046000/photosp/ee8202e4-ea93-4e02-920c-036ac79dbfe9/stock-photo-white-background-green-plants-gardening-many-organization-succulent-objects-succulent-plant-ee8202e4-ea93-4e02-920c-036ac79dbfe9.jpg);
+  background-size: cover;
+  background-position: center;
+  backface-visibility: hidden;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  color: var(--secondary);
+  opacity: 0.9;
+}
+
+.showcase h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+  color: var(--secondary);
+}
+
+.showcase p {
+  color: var(--dark);
+}
+
+/* top box */
+.top-box {
+  background: var(--light);
+  color: var(--dark);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+}
+
+.top-box-a {
+  grid-area: top-box-a;
+}
+
+.top-box-b {
+  grid-area: top-box-b;
+}
 
 /* portfolio */
 #portfolio {
