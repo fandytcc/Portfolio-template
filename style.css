@@ -182,10 +182,19 @@ input {
 
 /* last-section with boxes */
 #last-section .box {
-  padding: 2em;
+  padding: 1em;
   background: var(--secondary);
-  text-align: center;
   color: var(--light);
+}
+
+.box svg {
+  display: inline-block;
+  border-radius: 50%;
+  padding: 10px;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  border: 1px solid var(--light);
 }
 
 .box a {
@@ -195,9 +204,7 @@ input {
 
 /* footer */
 footer {
-  /* margin-top: 2rem; */
   background: var(--secondary);
   color: var(--light);
   text-align: center;
-  /* padding: 1rem; */
 }
