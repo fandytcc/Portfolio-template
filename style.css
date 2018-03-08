@@ -1,0 +1,114 @@
+/* CSS variables */
+:root {
+  --primary: #04DEAD;
+  --secondary: #203562;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  --hover: #F7B633;
+}
+
+/* Core styles */
+
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+}
+
+body {
+  background: var(--primary);
+  margin: 30px 50px;
+  line-height: 1.4;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 1em 0;
+}
+
+p {
+  margin: 0;
+  padding: 1em 0;
+}
+
+img {
+  max-width: 100%
+}
+
+.btn {
+  background: var(--secondary);
+  color: var(--light);
+  padding: 0.6rem 1.3rem;
+  border: 0;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: var(--hover);
+  color: var(--dark);
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
+/* navigation */
+.main-nav ul {
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.main-nav a {
+  background-color: var(--secondary);
+  display: flex;
+  text-decoration: none;
+  border: 0;
+  border-radius: 10px;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--light);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow);
+}
+
+.main-nav a:hover {
+  background: var(--hover);
+  color: var(--dark);
+}
+
+/* header showcase */
+#showcase {
+  min-height: 450px;
+  color: #fff;
+  text-align: center;
+}
+
+#showcase .bg-image {
+  position: absolute;
+  background: url('https://images.pexels.com/photos/212286/pexels-photo-212286.jpeg?w=940&h=650&auto=compress&cs=tinysrgb');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+#showcase h1 {
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
+#showcase .content-wrap {
+  padding: 0 1.5rem;
+}
+
+/* top container */
