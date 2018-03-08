@@ -24,7 +24,7 @@ body {
 
 h1, h2, h3 {
   margin: 0;
-  padding: 1em 0;
+  padding: 1em 1em 0;
 }
 
 p {
@@ -55,6 +55,15 @@ img {
   grid-gap: 20px;
 }
 
+.content-wrap {
+  color: #fff;
+  text-align: center;
+}
+
+.icon-wrap {
+  margin-bottom: 1em;
+}
+
 /* navigation */
 .main-nav ul {
   display: grid;
@@ -66,7 +75,7 @@ img {
 
 .main-nav a {
   background-color: var(--secondary);
-  display: flex;
+  display: block;
   text-decoration: none;
   border: 0;
   border-radius: 10px;
@@ -112,3 +121,38 @@ img {
 }
 
 /* top container */
+
+
+/* portfolio */
+.portfolio {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.portfolio img {
+  width: 100%;
+  box-shadow: var(--shadow);
+}
+
+/* boxes */
+#last-section .box {
+  padding: 2em;
+  background: var(--secondary);
+  text-align: center;
+  color: var(--light);
+}
+
+.box a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* footer */
+footer {
+  margin-top: 2rem;
+  background: var(--secondary);
+  color: var(--light);
+  text-align: center;
+  padding: 1rem;
+}
